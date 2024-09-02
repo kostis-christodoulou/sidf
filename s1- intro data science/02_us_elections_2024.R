@@ -83,9 +83,9 @@ us_election_polls <- polls[[4]] %>%  # table 4 on the page contains the list of 
   
   # separate sample size and likely audience
   # LV = Likely voters, RV = Registered Voters, A = Adults
-  separate_wider_delim(samplesize_b, 
-                       delim = " ",
-                       names = c("sample_size", "audience")) %>% 
+  # separate_wider_delim(samplesize_b, 
+  #                      delim = " ",
+  #                      names = c("sample_size", "audience")) %>% 
   
   # drop columns that are not needed
   select(-c(kamala_harris_democratic,
